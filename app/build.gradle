@@ -27,6 +27,19 @@ android {
             minifyEnabled false
         }
     }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/ktor-http.kotlin_module'
+        exclude 'META-INF/kotlinx-io.kotlin_module'
+        exclude 'META-INF/*'
+    }
 }
 
 def ktor_version = "1.1.4"
@@ -48,7 +61,7 @@ kotlin {
             framework()
         }
     }
-    
+
     sourceSets {
         commonMain {
             dependencies {
@@ -58,8 +71,8 @@ kotlin {
         }
         commonTest {
             dependencies {
-        		implementation kotlin('test-common')
-        		implementation kotlin('test-annotations-common')
+                implementation kotlin('test-common')
+                implementation kotlin('test-annotations-common')
             }
         }
         androidMain {

@@ -2,7 +2,7 @@ package io.github.dellisd.weather.data
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Runnable
-import
+import platform.darwin.*
 import kotlin.coroutines.CoroutineContext
 
 internal actual val ApplicationDispatcher: CoroutineDispatcher = NsQueueDispatcher(dispatch_get_main_queue())
