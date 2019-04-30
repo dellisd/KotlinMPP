@@ -1,0 +1,8 @@
+CREATE TABLE weatherEntry (
+    title TEXT,
+    link TEXT,
+    updated INTEGER,
+    published INTEGER,
+    summary TEXT,
+    category TEXT
+);
