@@ -11,19 +11,8 @@ import kotlinx.coroutines.launch
 internal expect val ApplicationDispatcher: CoroutineDispatcher
 
 class WeatherRepository {
-    private val client = HttpClient()
 
-    val address = Url("https://weather.gc.ca/rss/city/on-118_e.xml")
+    val address = "https://weather.gc.ca/rss/city/on-118_e.xml"
 
-    fun getFeed(callback: (String) -> Unit) {
-        GlobalScope.apply {
-            launch(ApplicationDispatcher) {
-                val result: String = client.get {
-                    url(this@WeatherRepository.address.toString())
-                }
 
-                callback(result)
-            }
-        }
-    }
 }

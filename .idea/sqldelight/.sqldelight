@@ -1,1 +1,1 @@
-{"databases":[{"packageName":"io.github.dellisd.weather","compilationUnits":[{"name":"metadataMain","sourceFolders":[{"path":"src/commonMain/sqldelight","dependency":false}]}],"outputDirectory":"build/sqldelight/Weather","className":"Weather","dependencies":[]}]}
+{"databases":[{"packageName":"io.github.dellisd.weather","compilationUnits":[{"name":"metadataMain","sourceFolders":[{"path":"src/commonMain/sqldelight","dependency":false}]}],"outputDirectory":"build\\sqldelight\\Weather","className":"Weather","dependencies":[]}]}

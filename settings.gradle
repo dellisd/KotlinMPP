@@ -8,8 +8,8 @@ pluginManagement {
     }
 }
 
-enableFeaturePreview('GRADLE_METADATA')
-
 rootProject.name = 'NativeTests'
 
 include ':app'
+
+enableFeaturePreview('GRADLE_METADATA')
